@@ -1,0 +1,48 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Mesajele din chat ──────────────────────────────────────────────
+    match /mesaje/{id} {
+      allow read: if true;
+
+      allow create: if
+           request.resource.data.keys().hasOnly(['camera','de_la','jos','text','cand','disp'])
+        && request.resource.data.keys().hasAll(['camera','de_la','jos','text','cand','disp'])
+        && request.resource.data.camera is string
+        && request.resource.data.camera.size() > 0
+        && request.resource.data.camera.size() < 80
+        && request.resource.data.de_la is string
+        && request.resource.data.de_la.size() > 0
+        && request.resource.data.de_la.size() < 40
+        && request.resource.data.jos is string
+        && request.resource.data.disp is string
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() <= 500
+        && request.resource.data.cand is number
+        && !exists(/databases/$(database)/documents/blocati/$(request.resource.data.jos))
+        && !exists(/databases/$(database)/documents/blocati/$(request.resource.data.disp));
+
+      // un mesaj scris ramane cum a fost scris
+      allow update: if false;
+
+      // se sterge doar ce e mai vechi de 24 de ore
+      allow delete: if resource.data.cand < request.time.toMillis() - 24 * 60 * 60 * 1000;
+    }
+
+    // ── Cine nu mai are voie sa scrie ──────────────────────────────────
+    // Numele contului cu litere mici, sau numarul telefonului pentru cei
+    // fara cont. In aplicatie, butonul il au doar adminii si moderatorii.
+    match /blocati/{cine} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // ── Conturile: NU sunt inca aici, raman pe Google ──────────────────
+    // Lasata deschisa doar ca sa nu se strice nimic daca le muti mai tarziu.
+    match /conturi/{doc} {
+      allow read, write: if true;
+    }
+  }
+}

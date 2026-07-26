@@ -1,0 +1,168 @@
+// ════════════════════════════════════════════════════════════════════════
+// REGULILE FIRESTORE PENTRU MRF (chat + conturi)
+//
+// CUM SE PUN: deschizi fisierul asta, Ctrl+A, Ctrl+C. In consola Firebase:
+// Firestore Database -> fila "Rules" -> Ctrl+A, Ctrl+V -> "Publish".
+// Se copiaza TOT, inclusiv randurile astea - sunt comentarii, nu deranjeaza.
+//
+// INAINTE (o singura data, in Authentication):
+//   1. Sign-in method -> Email/Password -> Enable            [facut 4 aug 2026]
+//   2. Users -> Add user: robert@mrf.app, cu parola ta       [facut 4 aug 2026]
+//
+// Numele de cont ESTE adresa: "alex" inseamna alex@mrf.app. Nu e o cutie
+// postala - nu se trimite nimic nicaieri. In aplicatie se scrie doar "alex".
+// De aceea numele au voie sa fie doar litere mici, cifre, punct, minus si _.
+//
+// CE APARA REGULILE ASTEA (chiar serverul refuza, nu doar butoanele ascunse):
+//   - numai adminul face conturi, da monede, deschide/inchide cotele
+//   - nimeni nu-si poate da singur monede sau drepturi
+//   - o discutie privata o pot citi doar cei doi din ea
+//   - nu poti scrie in chat sub numele altui cont
+//   - cine e blocat nu poate scrie nicaieri
+//   - un mesaj nu se poate schimba, si se sterge doar dupa 24 de ore
+//
+// CE NU APARA: soldul de monede sta tot pe telefonul fiecaruia, deci cine se
+// pricepe si-l poate schimba la el. Nu poate insa lua monede de la altul, si
+// nu poate aparea ca admin.
+// ════════════════════════════════════════════════════════════════════════
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── cine esti: numele e partea dinaintea lui @ din adresa ──────────
+    function logat() {
+      return request.auth != null && request.auth.token.email != null;
+    }
+    function numeMeu() {
+      return request.auth.token.email.split('@')[0].lower();
+    }
+    function contul(nume) {
+      return get(/databases/$(database)/documents/conturi/$(nume)).data;
+    }
+    function amCont() {
+      return logat() &&
+             exists(/databases/$(database)/documents/conturi/$(numeMeu()));
+    }
+    // Contul tau se recunoaste direct din adresa, fara sa mai citim nimic din
+    // baza. Nu e doar scurtatura: regulile au voie sa citeasca cel mult 20 de
+    // documente pe interogare, iar un "cine e adminul?" citit pentru fiecare
+    // document ar fi rupt panoul de conturi exact cand ajungi la multi
+    // utilizatori.
+    function eBoss() {
+      return logat() && request.auth.token.email.lower() == 'robert@mrf.app';
+    }
+    function eAdmin() {
+      return eBoss() || (amCont() && contul(numeMeu()).admin == true);
+    }
+    function poateBloca() {
+      return eBoss() || (amCont() &&
+             (contul(numeMeu()).admin == true || contul(numeMeu()).moderator == true));
+    }
+
+    // ── Conturile ──────────────────────────────────────────────────────
+    // Se citesc de oricine (sunt doar nume si drepturi, fara parole - alea
+    // stau la Firebase Auth si nu le vede nimeni, nici macar tu).
+    match /conturi/{nume} {
+      allow read: if true;
+
+      // Contul de admin si-l poate scrie singur, la prima intrare.
+      // Restul conturilor le face doar adminul.
+      allow create: if eAdmin()
+                    || (eBoss() && nume == numeMeu()
+                        && request.resource.data.admin == true);
+
+      // Adminul schimba orice. Fiecare isi poate scrie doar propriul uid,
+      // atat - nu monede, nu drepturi.
+      allow update: if eAdmin()
+                    || (logat() && nume == numeMeu()
+                        && request.resource.data.diff(resource.data)
+                             .affectedKeys().hasOnly(['uid'])
+                        && request.resource.data.uid == request.auth.uid);
+
+      allow delete: if eAdmin();
+    }
+
+    // ── Cat are fiecare (raportat de telefonul lui) ─────────────────────
+    match /solduri/{nume} {
+      allow read: if eAdmin() || (logat() && nume == numeMeu());
+      allow write: if (logat() && nume == numeMeu()) || eAdmin();
+    }
+
+    // ── De pe cate telefoane e deschis un cont ──────────────────────────
+    match /sesiuni/{id} {
+      allow read: if eAdmin();
+      allow write: if logat() && id.split('__')[0] == numeMeu();
+    }
+
+    // ── Biletele scoase de tine din istoric ─────────────────────────────
+    match /ascunse/{idBilet} {
+      allow read: if true;
+      allow write: if eAdmin();
+    }
+
+    // ── Cine nu mai are voie sa scrie in chat ───────────────────────────
+    match /blocati/{cine} {
+      allow read: if true;
+      allow write: if poateBloca();
+    }
+
+    // -- Ce a pariat fiecare (apare pe "Acasa") -------------------------
+    // Biletele stau pe telefonul fiecaruia; aici se scrie doar atat cat sa
+    // se vada pe Acasa: cine, ce bilet, ce cota, ce miza, cum a iesit.
+    // Nu poti scrie in numele altuia, si nu poti schimba ce s-a scris.
+    match /pariuri/{id} {
+      allow read: if true;
+      allow create: if logat()
+        && request.resource.data.keys().hasOnly(['nume','jos','fel','titlu','cota','miza','castig','cand'])
+        && request.resource.data.jos == numeMeu()
+        && request.resource.data.titlu is string
+        && request.resource.data.titlu.size() < 60
+        && request.resource.data.cand is number;
+      allow update: if false;
+      // se sterge singur dupa doua zile (curatarea o face aplicatia)
+      allow delete: if resource.data.cand < request.time.toMillis() - 2 * 24 * 60 * 60 * 1000;
+    }
+
+    // -- Mesajele din chat ──────────────────────────────────────────────
+    match /mesaje/{id} {
+      // Camera comuna o citeste oricine, si cei fara cont. O discutie intre
+      // doi o pot citi doar cei doi (numele lor sunt chiar in numele camerei).
+      allow read: if resource.data.camera == 'toti'
+                  || (logat() && resource.data.camera.split('\\|').hasAny([numeMeu()]));
+
+      allow create: if
+           request.resource.data.keys().hasOnly(['camera','de_la','jos','catre','text','cand','disp'])
+        && request.resource.data.keys().hasAll(['camera','de_la','jos','catre','text','cand','disp'])
+        && request.resource.data.catre is string
+        && request.resource.data.catre.size() < 40
+        && request.resource.data.camera is string
+        && request.resource.data.camera.size() > 0
+        && request.resource.data.camera.size() < 80
+        && request.resource.data.de_la is string
+        && request.resource.data.de_la.size() > 0
+        && request.resource.data.de_la.size() < 40
+        && request.resource.data.jos is string
+        && request.resource.data.disp is string
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() <= 500
+        && request.resource.data.cand is number
+        // sub numele unui cont scrie doar cel care a intrat in el
+        && (!exists(/databases/$(database)/documents/conturi/$(request.resource.data.jos))
+            || (logat() && request.resource.data.jos == numeMeu()))
+        // intr-o discutie privata scriu doar cei doi
+        && (request.resource.data.camera == 'toti'
+            || (logat() && request.resource.data.camera.split('\\|').hasAny([numeMeu()])))
+        // cine e blocat, nu scrie
+        && !exists(/databases/$(database)/documents/blocati/$(request.resource.data.jos))
+        && !exists(/databases/$(database)/documents/blocati/$(request.resource.data.disp));
+
+      // un mesaj scris ramane cum a fost scris
+      allow update: if false;
+
+      // se sterge doar ce e mai vechi de 24 de ore (curatarea o face aplicatia)
+      allow delete: if resource.data.cand < request.time.toMillis() - 24 * 60 * 60 * 1000;
+    }
+  }
+}
