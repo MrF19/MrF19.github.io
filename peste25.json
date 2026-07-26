@@ -1,0 +1,364 @@
+{
+ "ziua": "2026-09-26",
+ "facut": "2026-09-25T22:50:43+00:00",
+ "linia": 2.5,
+ "cota_min": null,
+ "cota_max": null,
+ "sansa_min": 65.0,
+ "cate_gasite": 19,
+ "cota_totala": 883.74,
+ "meciuri": [
+  {
+   "id_meci": 800027546,
+   "piata": "Peste 2.5",
+   "meci": "Ross County - Hearts B",
+   "gazda": "Ross County",
+   "oaspete": "Hearts B",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.3,
+   "sansa": 86.7,
+   "sansa_casa": 72.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800028845,
+   "piata": "Peste 2.5",
+   "meci": "Philadelphia Union - Orlando City SC",
+   "gazda": "Philadelphia Union",
+   "oaspete": "Orlando City SC",
+   "ora_uk": "00:30",
+   "liga": "MLS",
+   "tara": "USA",
+   "cota": 1.29,
+   "sansa": 79.5,
+   "sansa_casa": 73.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027309,
+   "piata": "Peste 2.5",
+   "meci": "FC Volendam - VVV-Venlo",
+   "gazda": "FC Volendam",
+   "oaspete": "VVV-Venlo",
+   "ora_uk": "19:00",
+   "liga": "Eerste Divisie",
+   "tara": "Netherlands",
+   "cota": 1.29,
+   "sansa": 73.7,
+   "sansa_casa": 73.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027534,
+   "piata": "Peste 2.5",
+   "meci": "Clachnacuddin - Celtic II",
+   "gazda": "Clachnacuddin",
+   "oaspete": "Celtic II",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.29,
+   "sansa": 71.7,
+   "sansa_casa": 73.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027544,
+   "piata": "Peste 2.5",
+   "meci": "Kelty Hearts F.C. - Montrose",
+   "gazda": "Kelty Hearts F.C.",
+   "oaspete": "Montrose",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.25,
+   "sansa": 70.2,
+   "sansa_casa": 76.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800028844,
+   "piata": "Peste 2.5",
+   "meci": "New York Red Bulls - St. Louis City SC",
+   "gazda": "New York Red Bulls",
+   "oaspete": "St. Louis City SC",
+   "ora_uk": "00:30",
+   "liga": "MLS",
+   "tara": "USA",
+   "cota": 1.44,
+   "sansa": 70.0,
+   "sansa_casa": 65.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027541,
+   "piata": "Peste 2.5",
+   "meci": "Formartine United FC - Edinburgh City F.C.",
+   "gazda": "Formartine United FC",
+   "oaspete": "Edinburgh City F.C.",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.53,
+   "sansa": 69.9,
+   "sansa_casa": 61.1,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027307,
+   "piata": "Peste 2.5",
+   "meci": "Heracles Almelo - Vitesse",
+   "gazda": "Heracles Almelo",
+   "oaspete": "Vitesse",
+   "ora_uk": "15:30",
+   "liga": "Eerste Divisie",
+   "tara": "Netherlands",
+   "cota": 1.4,
+   "sansa": 69.6,
+   "sansa_casa": 67.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800026903,
+   "piata": "Peste 2.5",
+   "meci": "Stockport - Peterborough United",
+   "gazda": "Stockport",
+   "oaspete": "Peterborough United",
+   "ora_uk": "15:00",
+   "liga": "League One",
+   "tara": "England",
+   "cota": 1.4,
+   "sansa": 69.2,
+   "sansa_casa": 67.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027539,
+   "piata": "Peste 2.5",
+   "meci": "East Fife - Clydebank FC",
+   "gazda": "East Fife",
+   "oaspete": "Clydebank FC",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.3,
+   "sansa": 69.2,
+   "sansa_casa": 72.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800026606,
+   "piata": "Peste 2.5",
+   "meci": "K.S.C. Lokeren-Temse - Houtvenne",
+   "gazda": "K.S.C. Lokeren-Temse",
+   "oaspete": "Houtvenne",
+   "ora_uk": "19:00",
+   "liga": "Belgian Cup",
+   "tara": "Belgium",
+   "cota": 1.44,
+   "sansa": 69.2,
+   "sansa_casa": 65.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027547,
+   "piata": "Peste 2.5",
+   "meci": "Stranraer - East Kilbride Fc",
+   "gazda": "Stranraer",
+   "oaspete": "East Kilbride Fc",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.3,
+   "sansa": 68.2,
+   "sansa_casa": 72.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027538,
+   "piata": "Peste 2.5",
+   "meci": "Dumbarton - Banks O'Dee FC",
+   "gazda": "Dumbarton",
+   "oaspete": "Banks O'Dee FC",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.3,
+   "sansa": 67.9,
+   "sansa_casa": 72.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027023,
+   "piata": "Peste 2.5",
+   "meci": "England - Spain",
+   "gazda": "England",
+   "oaspete": "Spain",
+   "ora_uk": "19:45",
+   "liga": "UEFA Nations League - League A",
+   "tara": "Europe",
+   "cota": 1.75,
+   "sansa": 67.3,
+   "sansa_casa": 53.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800028842,
+   "piata": "Peste 2.5",
+   "meci": "CF Montréal - FC Cincinnati",
+   "gazda": "CF Montréal",
+   "oaspete": "FC Cincinnati",
+   "ora_uk": "00:30",
+   "liga": "MLS",
+   "tara": "USA",
+   "cota": 1.44,
+   "sansa": 67.2,
+   "sansa_casa": 65.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800028821,
+   "piata": "Peste 2.5",
+   "meci": "Universidad Católica - U. La Calera",
+   "gazda": "Universidad Católica",
+   "oaspete": "U. La Calera",
+   "ora_uk": "00:00",
+   "liga": "Copa Chile - Play Offs",
+   "tara": "Chile",
+   "cota": 2.0,
+   "sansa": 66.3,
+   "sansa_casa": 47.4,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800028825,
+   "piata": "Peste 2.5",
+   "meci": "Cruz Azul - Toluca",
+   "gazda": "Cruz Azul",
+   "oaspete": "Toluca",
+   "ora_uk": "23:50",
+   "liga": "Liga MX - Apertura",
+   "tara": "Mexico",
+   "cota": 1.62,
+   "sansa": 66.0,
+   "sansa_casa": 58.1,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800026902,
+   "piata": "Peste 2.5",
+   "meci": "Plymouth Argyle - Burton Albion",
+   "gazda": "Plymouth Argyle",
+   "oaspete": "Burton Albion",
+   "ora_uk": "15:00",
+   "liga": "League One",
+   "tara": "England",
+   "cota": 1.67,
+   "sansa": 65.9,
+   "sansa_casa": 56.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027542,
+   "piata": "Peste 2.5",
+   "meci": "Fraserburgh FC - Stirling Albion",
+   "gazda": "Fraserburgh FC",
+   "oaspete": "Stirling Albion",
+   "ora_uk": "15:00",
+   "liga": "Challenge Cup",
+   "tara": "Scotland",
+   "cota": 1.36,
+   "sansa": 65.2,
+   "sansa_casa": 69.5,
+   "stare": "in asteptare"
+  }
+ ],
+ "istoric": [
+  {
+   "ziua": "2026-09-05",
+   "iesite": 33,
+   "verificate": 60,
+   "cota_totala": 7051202827298818.0
+  },
+  {
+   "ziua": "2026-09-06",
+   "iesite": 28,
+   "verificate": 52,
+   "cota_totala": 352425824930759.4
+  },
+  {
+   "ziua": "2026-09-07",
+   "iesite": 4,
+   "verificate": 8,
+   "cota_totala": 128.69
+  },
+  {
+   "ziua": "2026-09-08",
+   "iesite": 3,
+   "verificate": 6,
+   "cota_totala": 40.97
+  },
+  {
+   "ziua": "2026-09-09",
+   "iesite": 4,
+   "verificate": 13,
+   "cota_totala": 2584.09
+  },
+  {
+   "ziua": "2026-09-10",
+   "iesite": 6,
+   "verificate": 9,
+   "cota_totala": 390.01
+  },
+  {
+   "ziua": "2026-09-12",
+   "iesite": 16,
+   "verificate": 25,
+   "cota_totala": 55483.5
+  },
+  {
+   "ziua": "2026-09-13",
+   "iesite": 16,
+   "verificate": 28,
+   "cota_totala": 210284.47
+  },
+  {
+   "ziua": "2026-09-15",
+   "iesite": 1,
+   "verificate": 1,
+   "cota_totala": 1.48
+  },
+  {
+   "ziua": "2026-09-18",
+   "iesite": 0,
+   "verificate": 1,
+   "cota_totala": 1.48
+  },
+  {
+   "ziua": "2026-09-20",
+   "iesite": 20,
+   "verificate": 31,
+   "cota_totala": 359533.54
+  },
+  {
+   "ziua": "2026-09-21",
+   "iesite": 1,
+   "verificate": 1,
+   "cota_totala": 1.33
+  },
+  {
+   "ziua": "2026-09-23",
+   "iesite": 5,
+   "verificate": 10,
+   "cota_totala": 21.21
+  },
+  {
+   "ziua": "2026-09-25",
+   "iesite": 2,
+   "verificate": 5,
+   "cota_totala": 6.05
+  }
+ ]
+}

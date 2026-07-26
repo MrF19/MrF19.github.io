@@ -1,0 +1,133 @@
+{
+ "eticheta": "Saptamana",
+ "tinta": null,
+ "cota": 6,
+ "valoare": 6,
+ "sansa": 17.0889,
+ "unuDin": 6,
+ "meciuri": [
+  {
+   "id_meci": 800025434,
+   "meci": "Toluca - Santos Laguna",
+   "gazda": "Toluca",
+   "oaspete": "Santos Laguna",
+   "ora": "00:00",
+   "incredere": 0.75,
+   "liga": "Liga MX - Apertura",
+   "tara": "Mexico",
+   "sansa": 69.5,
+   "cota": 1.44,
+   "picioare": [
+    {
+     "nume": "Peste 2.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 2.5
+     },
+     "p": 69.5,
+     "stare": "castigat"
+    }
+   ],
+   "zi": "2026-09-21"
+  },
+  {
+   "id_meci": 800025598,
+   "meci": "Walsall - Stevenage",
+   "gazda": "Walsall",
+   "oaspete": "Stevenage",
+   "ora": "18:00",
+   "incredere": 1.0,
+   "liga": "EFL Trophy",
+   "tara": "England",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "castigat"
+    }
+   ],
+   "zi": "2026-09-22"
+  },
+  {
+   "id_meci": 800025593,
+   "meci": "Plymouth Argyle - Crystal Palace U21",
+   "gazda": "Plymouth Argyle",
+   "oaspete": "Crystal Palace U21",
+   "ora": "18:00",
+   "incredere": 0.81,
+   "liga": "EFL Trophy",
+   "tara": "England",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 2.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 2.5
+     },
+     "p": 71.0,
+     "stare": "castigat"
+    }
+   ],
+   "zi": "2026-09-22"
+  },
+  {
+   "id_meci": 800025597,
+   "meci": "Tranmere - Shrewsbury Town",
+   "gazda": "Tranmere",
+   "oaspete": "Shrewsbury Town",
+   "ora": "18:00",
+   "incredere": 0.58,
+   "liga": "EFL Trophy",
+   "tara": "England",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "pierdut"
+    }
+   ],
+   "zi": "2026-09-22"
+  },
+  {
+   "id_meci": 800025744,
+   "meci": "Manta FC - Orense SC",
+   "gazda": "Manta FC",
+   "oaspete": "Orense SC",
+   "ora": "19:00",
+   "incredere": 1.0,
+   "liga": "Liga Pro - Relegation Group",
+   "tara": "Ecuador",
+   "sansa": 68.8,
+   "cota": 1.45,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 68.8,
+     "stare": "castigat"
+    }
+   ],
+   "zi": "2026-09-21"
+  }
+ ],
+ "saptamana": "2026-09-21",
+ "stare": "pierdut",
+ "actualizat": "2026-09-25T22:51:00+00:00"
+}

@@ -1,0 +1,116 @@
+{
+ "ziua": "2026-09-26",
+ "facut": "2026-09-25T22:50:54+00:00",
+ "tinta": 20.0,
+ "cota_totala": 20.05,
+ "sansa": 14.68,
+ "picioare": [
+  {
+   "id_meci": 800026627,
+   "meci": "Hadzici - Travnik",
+   "ora": "13:30",
+   "liga": "Prva Liga - FBiH",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 81.9,
+   "cota": 1.37,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027534,
+   "meci": "Clachnacuddin - Celtic II",
+   "ora": "14:00",
+   "liga": "Challenge Cup",
+   "nume": "Celtic nu pierde",
+   "piata": "X2",
+   "sansa": 73.7,
+   "cota": 1.58,
+   "cod": {
+    "f": "np",
+    "cine": "oaspete"
+   },
+   "zice_piata": 63.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027547,
+   "meci": "Stranraer - East Kilbride Fc",
+   "ora": "14:00",
+   "liga": "Challenge Cup",
+   "nume": "Stranraer nu pierde",
+   "piata": "1X",
+   "sansa": 64.5,
+   "cota": 1.99,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 50.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027026,
+   "meci": "Bulgaria - Luxembourg",
+   "ora": "16:00",
+   "liga": "UEFA Nations League - League C",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 79.2,
+   "cota": 1.46,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 68.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800027023,
+   "meci": "England - Spain",
+   "ora": "18:45",
+   "liga": "UEFA Nations League - League A",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 82.2,
+   "cota": 1.38,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 72.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800026493,
+   "meci": "All Boys - Colon",
+   "ora": "19:00",
+   "liga": "Primera Nacional",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 75.9,
+   "cota": 1.53,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 65.4,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800026494,
+   "meci": "Ciudad De Bolivar - Chaco For Ever",
+   "ora": "19:00",
+   "liga": "Primera Nacional",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 76.3,
+   "cota": 1.51,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 66.2,
+   "stare": "in asteptare"
+  }
+ ]
+}
