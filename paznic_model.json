@@ -1,0 +1,67 @@
+{
+ "id": "2026-10-16-ok-da39a3ee",
+ "facut": "2026-10-16T22:33:49+00:00",
+ "nivel": "ok",
+ "mesaje": [],
+ "cifre": {
+  "notare_de_la": "2026-10-09",
+  "note": {
+   "1x2_aplicatie": {
+    "n": 4323,
+    "nimerit": 49.9,
+    "brier": 0.6139
+   },
+   "1x2_goluri": {
+    "n": 4323,
+    "nimerit": 49.9,
+    "brier": 0.6143
+   },
+   "1x2_bet365": {
+    "n": 2991,
+    "nimerit": 52.1,
+    "brier": 0.5908
+   },
+   "gg_aplicatie": {
+    "n": 4323,
+    "nimerit": 56.6,
+    "brier": 0.2456
+   },
+   "gg_fara_ml": {
+    "n": 4323,
+    "nimerit": 55.1,
+    "brier": 0.248
+   },
+   "gg_bet365": {
+    "n": 2789,
+    "nimerit": 55.5,
+    "brier": 0.246
+   },
+   "o25_aplicatie": {
+    "n": 4323,
+    "nimerit": 60.6,
+    "brier": 0.2354
+   },
+   "o25_fara_ml": {
+    "n": 4323,
+    "nimerit": 59.3,
+    "brier": 0.238
+   },
+   "o25_bet365": {
+    "n": 2630,
+    "nimerit": 58.5,
+    "brier": 0.2392
+   }
+  },
+  "maine": {
+   "n": 3388,
+   "doi_la_suta": 26.5,
+   "cu_cote": 1618,
+   "acord_la_suta": 82.6
+  },
+  "ieri": {
+   "zi": "2026-10-15",
+   "n": 166,
+   "nimerit": 53.6
+  }
+ }
+}

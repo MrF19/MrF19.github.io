@@ -1,0 +1,169 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Cine esti ──────────────────────────────────────────────────────
+    // Stau sus, inaintea tuturor regulilor care le folosesc.
+    //
+    // Numele contului se face din adresa taind la @ si trecand la litere
+    // mici - exact ce face numeDinEmail() in aplicatie ("alex@mrf.app" ->
+    // "alex"). Documentul din conturi are numele asta drept id, deci ne
+    // uitam in el dupa insemnele de rol, aceleasi pe care le citeste si
+    // aplicatia (campurile "admin" si "moderator").
+    function contulMeu() {
+      return /databases/$(database)/documents/conturi/$(request.auth.token.email.split('@')[0].lower());
+    }
+
+    function eAdmin() {
+      return request.auth != null
+        && exists(contulMeu())
+        && get(contulMeu()).data.admin == true;
+    }
+
+    function ePoateBloca() {
+      return request.auth != null
+        && exists(contulMeu())
+        && (get(contulMeu()).data.admin == true
+            || get(contulMeu()).data.moderator == true);
+    }
+
+    // ── Mesajele din chat ──────────────────────────────────────────────
+    // Neschimbate fata de firestore_reguli_DOAR_REGULI.txt.
+    match /mesaje/{id} {
+      allow read: if true;
+
+      allow create: if
+           request.resource.data.keys().hasOnly(['camera','de_la','jos','text','cand','disp'])
+        && request.resource.data.keys().hasAll(['camera','de_la','jos','text','cand','disp'])
+        && request.resource.data.camera is string
+        && request.resource.data.camera.size() > 0
+        && request.resource.data.camera.size() < 80
+        && request.resource.data.de_la is string
+        && request.resource.data.de_la.size() > 0
+        && request.resource.data.de_la.size() < 40
+        && request.resource.data.jos is string
+        && request.resource.data.disp is string
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() <= 500
+        && request.resource.data.cand is number
+        && !exists(/databases/$(database)/documents/blocati/$(request.resource.data.jos))
+        && !exists(/databases/$(database)/documents/blocati/$(request.resource.data.disp));
+
+      allow update: if false;
+      allow delete: if resource.data.cand < request.time.toMillis() - 24 * 60 * 60 * 1000;
+    }
+
+    // ── Cine nu mai are voie sa scrie in chat ──────────────────────────
+    // Era "allow write: if true", si asa era si in fisierul vechi - am
+    // copiat-o fara s-o pun la indoiala. Verificat din afara pe 16 august
+    // 2026: am putut scrie in ea fara cont. Cu asta, oricine putea baga pe
+    // oricare dintre voi in lista si nu mai putea scrie in chat, sau se
+    // putea scoate singur.
+    //
+    // Cititul ramane deschis: regula de la /mesaje se uita in colectia asta
+    // la fiecare mesaj scris, si o fac si invitatii.
+    // Scrisul e pentru admini si moderatori, exact ca butonul din aplicatie
+    // (vezi ePoateBloca() din Master_genereaza_html.py).
+    match /blocati/{cine} {
+      allow read: if true;
+      allow write: if ePoateBloca();
+    }
+
+    // ── Conturile ──────────────────────────────────────────────────────
+    // AICI ERA GAURA: era "allow read, write: if true", deci oricine putea
+    // sa-si scrie singur {admin:true} si devenea admin in aplicatie, fara
+    // cont si fara parola.
+    //
+    // Citirea RAMANE deschisa, si nu din lene: aplicatia citeste colectia
+    // asta la pornire, inainte de logare, ca sa stie cine e admin, si
+    // cheama dupaCeStimCine() din raspuns. Daca citirea pica, invitatii
+    // raman cu aplicatia blocata. Ce e inauntru sunt insemne de rol, nu
+    // parole - alea sunt pe Firebase Auth din 4 august 2026.
+    //
+    // Scrierea o pot face NUMAI adminii, si numai logati.
+    //
+    // Prima varianta pe care am scris-o era "allow write: if false" - si ar
+    // fi rupt panoul de admin, fiindca scrieCont() din aplicatie scrie chiar
+    // aici cand dai monede sau faci pe cineva moderator. Deci nu inchidem
+    // scrisul, ci il legam de cine esti.
+    //
+    // eAdmin() e definita sus, la inceput.
+    match /conturi/{doc} {
+      allow read: if true;
+      allow write: if eAdmin();
+    }
+
+    // ── Cine a pariat ce ───────────────────────────────────────────────
+    // Lipsea cu totul din fisierul vechi, deci ramanea pe ce era publicat
+    // in consola - si acolo era deschis, am citit colectia de pe alt
+    // calculator, fara cont.
+    //
+    // Cititul ramane deschis: feed-ul de pe Acasa e intre voi si se vede
+    // si inainte de logare. Scrisul cere cont - altfel iti poate scrie
+    // oricine in feed ca a castigat 40.000.
+    match /pariuri/{id} {
+      allow read: if true;
+
+      allow create: if request.auth != null
+        && request.resource.data.nume is string
+        && request.resource.data.nume.size() > 0
+        && request.resource.data.nume.size() < 40
+        && request.resource.data.cota is number
+        && request.resource.data.miza is number;
+
+      // un pariu anuntat ramane cum a fost anuntat
+      allow update: if false;
+
+      // aplicatia isi face curat singura: sterge ce e mai vechi de 2 zile
+      // (vezi getDocs cu endBefore din Master_genereaza_html.py). Id-ul
+      // incepe cu ora in milisecunde, deci ne uitam la el.
+      allow delete: if request.auth != null;
+    }
+
+    // ── Biletele ascunse de fiecare ────────────────────────────────────
+    match /ascunse/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // ── Soldul fiecaruia si sesiunile deschise ─────────────────────────
+    // Le-am gasit cautand ce colectii atinge aplicatia (sunt sapte, nu
+    // cinci). Fara ele, regula de mai jos le-ar fi taiat si s-ar fi stricat
+    // soldurile si lista de aparate conectate, fara niciun mesaj de eroare.
+    // Amandoua cer cont: sunt bani si sesiuni, n-au ce cauta la nelogati.
+    match /solduri/{cine} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+
+    match /sesiuni/{id} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+
+    // ── Fotografiile din timpul meciurilor ────────────────────────────
+    // Aplicatia scrie aici, cat te uiti la meciuri live: minutul, scorul,
+    // suturile, cornerele, xG. Rularea de la 10:00 si 22:00 le muta in baza
+    // noastra si LE STERGE - deci colectia asta e un loc de trecere, nu de
+    // depozitare, si ramane mereu aproape goala.
+    //
+    // Rostul lor: sa se poata masura, peste cateva saptamani, daca semnalul
+    // "gol pana la pauza" chiar prezice ceva. Fara ele, cifrele de pe ecran
+    // raman pareri. Ideea lui, 17 august 2026.
+    match /live_stat/{id} {
+      allow read: if true;               // le citeste rularea, ca sa le mute
+      allow create: if request.auth != null
+        && request.resource.data.fs is string
+        && request.resource.data.min is number;
+      allow update: if false;            // o fotografie nu se rescrie
+      allow delete: if request.auth != null;   // rularea le sterge dupa mutare
+    }
+
+    // Orice altceva: inchis. Fara linia asta, o colectie noua pornita din
+    // greseala ramane deschisa fara sa observe nimeni.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
