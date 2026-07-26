@@ -1,0 +1,130 @@
+{
+ "ziua": "2026-10-03",
+ "facut": "2026-10-02T22:50:57+00:00",
+ "tinta": 20.0,
+ "cota_totala": 20.26,
+ "sansa": 17.31,
+ "picioare": [
+  {
+   "id_meci": 800029966,
+   "meci": "Independiente Rivadavia - Gimnasia y Esgrima",
+   "ora": "00:30",
+   "liga": "Liga Profesional - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 81.7,
+   "cota": 1.44,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 69.4,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030449,
+   "meci": "Redditch Utd - Berkhamsted Town",
+   "ora": "14:00",
+   "liga": "FA Cup - Qualification",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 82.1,
+   "cota": 1.39,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 71.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030806,
+   "meci": "FK Haugesund - Stabaek",
+   "ora": "14:00",
+   "liga": "OBOS-ligaen",
+   "nume": "FK nu pierde",
+   "piata": "1X",
+   "sansa": 82.5,
+   "cota": 1.38,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 72.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030740,
+   "meci": "Hassania Agadir - Maghreb Fez",
+   "ora": "16:00",
+   "liga": "Botola Pro",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 78.0,
+   "cota": 1.54,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 64.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800029967,
+   "meci": "Defensa Y Justicia - San Lorenzo",
+   "ora": "17:45",
+   "liga": "Liga Profesional - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 81.8,
+   "cota": 1.45,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 69.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800029972,
+   "meci": "Deportivo Morón - All Boys",
+   "ora": "18:00",
+   "liga": "Primera Nacional",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 76.6,
+   "cota": 1.5,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 66.7,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030741,
+   "meci": "COD Meknes - Kawkab Marrakech",
+   "ora": "18:00",
+   "liga": "Botola Pro",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 78.8,
+   "cota": 1.47,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 68.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800029969,
+   "meci": "Newell's Old Boys - CA Lanús",
+   "ora": "20:00",
+   "liga": "Liga Profesional - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 81.2,
+   "cota": 1.49,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 67.1,
+   "stare": "in asteptare"
+  }
+ ]
+}

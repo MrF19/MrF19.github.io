@@ -1,0 +1,85 @@
+{
+ "eticheta": "Saptamana",
+ "tinta": null,
+ "cota": 3,
+ "valoare": 3,
+ "sansa": 33.8832,
+ "unuDin": 3,
+ "meciuri": [
+  {
+   "id_meci": 800032366,
+   "meci": "Boca Juniors - Club Atlético Unión de Santa Fe",
+   "gazda": "Boca Juniors",
+   "oaspete": "Club Atlético Unión de Santa Fe",
+   "ora": "00:30",
+   "incredere": 0.81,
+   "liga": "Liga Profesional - Clausura",
+   "tara": "Argentina",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-10-03"
+  },
+  {
+   "id_meci": 800030389,
+   "meci": "Exeter City - Rotherham",
+   "gazda": "Exeter City",
+   "oaspete": "Rotherham",
+   "ora": "14:00",
+   "incredere": 0.68,
+   "liga": "League Two",
+   "tara": "England",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-10-03"
+  },
+  {
+   "id_meci": 800030396,
+   "meci": "Boreham Wood - Altrincham FC",
+   "gazda": "Boreham Wood",
+   "oaspete": "Altrincham FC",
+   "ora": "14:00",
+   "incredere": 1.0,
+   "liga": "National League",
+   "tara": "England",
+   "sansa": 67.3,
+   "cota": 1.49,
+   "picioare": [
+    {
+     "nume": "Peste 2.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 2.5
+     },
+     "p": 67.3,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-10-03"
+  }
+ ],
+ "saptamana": "2026-09-28",
+ "stare": "in asteptare",
+ "actualizat": "2026-10-02T22:50:59+00:00"
+}

@@ -1,0 +1,378 @@
+{
+ "ziua": "2026-10-03",
+ "facut": "2026-10-02T22:50:56+00:00",
+ "linia": 2.5,
+ "cota_min": null,
+ "cota_max": null,
+ "sansa_min": 65.0,
+ "cate_gasite": 20,
+ "cota_totala": 1248.04,
+ "meciuri": [
+  {
+   "id_meci": 800030753,
+   "piata": "Peste 2.5",
+   "meci": "RKC Waalwijk - Emmen",
+   "gazda": "RKC Waalwijk",
+   "oaspete": "Emmen",
+   "ora_uk": "19:00",
+   "liga": "Eerste Divisie",
+   "tara": "Netherlands",
+   "cota": 1.44,
+   "sansa": 80.6,
+   "sansa_casa": 65.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030808,
+   "piata": "Peste 2.5",
+   "meci": "Stromsgodset - Åsane",
+   "gazda": "Stromsgodset",
+   "oaspete": "Åsane",
+   "ora_uk": "15:00",
+   "liga": "OBOS-ligaen",
+   "tara": "Norway",
+   "cota": 1.14,
+   "sansa": 80.0,
+   "sansa_casa": 82.8,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030470,
+   "piata": "Peste 2.5",
+   "meci": "Spain - Czech Republic",
+   "gazda": "Spain",
+   "oaspete": "Czech Republic",
+   "ora_uk": "19:45",
+   "liga": "UEFA Nations League - League A",
+   "tara": "Europe",
+   "cota": 1.33,
+   "sansa": 78.8,
+   "sansa_casa": 71.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030947,
+   "piata": "Peste 2.5",
+   "meci": "Ross County - Alloa Athletic",
+   "gazda": "Ross County",
+   "oaspete": "Alloa Athletic",
+   "ora_uk": "15:00",
+   "liga": "League One",
+   "tara": "Scotland",
+   "cota": 1.53,
+   "sansa": 78.3,
+   "sansa_casa": 60.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030423,
+   "piata": "Peste 2.5",
+   "meci": "Rushden - Braintree Town",
+   "gazda": "Rushden",
+   "oaspete": "Braintree Town",
+   "ora_uk": "15:00",
+   "liga": "FA Cup - Qualification",
+   "tara": "England",
+   "cota": 1.53,
+   "sansa": 77.1,
+   "sansa_casa": 60.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030469,
+   "piata": "Peste 2.5",
+   "meci": "Croatia - England",
+   "gazda": "Croatia",
+   "oaspete": "England",
+   "ora_uk": "17:00",
+   "liga": "UEFA Nations League - League A",
+   "tara": "Europe",
+   "cota": 1.62,
+   "sansa": 76.0,
+   "sansa_casa": 58.1,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030806,
+   "piata": "Peste 2.5",
+   "meci": "FK Haugesund - Stabaek",
+   "gazda": "FK Haugesund",
+   "oaspete": "Stabaek",
+   "ora_uk": "15:00",
+   "liga": "OBOS-ligaen",
+   "tara": "Norway",
+   "cota": 1.22,
+   "sansa": 73.8,
+   "sansa_casa": 77.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030751,
+   "piata": "Peste 2.5",
+   "meci": "FC Den Bosch - FC Dordrecht",
+   "gazda": "FC Den Bosch",
+   "oaspete": "FC Dordrecht",
+   "ora_uk": "19:00",
+   "liga": "Eerste Divisie",
+   "tara": "Netherlands",
+   "cota": 1.36,
+   "sansa": 73.3,
+   "sansa_casa": 69.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030958,
+   "piata": "Peste 2.5",
+   "meci": "Caledonian Braves FC - Fraserburgh FC",
+   "gazda": "Caledonian Braves FC",
+   "oaspete": "Fraserburgh FC",
+   "ora_uk": "15:00",
+   "liga": "Scottish Cup",
+   "tara": "Scotland",
+   "cota": 1.36,
+   "sansa": 73.0,
+   "sansa_casa": 69.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030807,
+   "piata": "Peste 2.5",
+   "meci": "Hodd - Odd",
+   "gazda": "Hodd",
+   "oaspete": "Odd",
+   "ora_uk": "15:00",
+   "liga": "OBOS-ligaen",
+   "tara": "Norway",
+   "cota": 1.33,
+   "sansa": 72.1,
+   "sansa_casa": 71.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030949,
+   "piata": "Peste 2.5",
+   "meci": "Annan Athletic - Stirling Albion",
+   "gazda": "Annan Athletic",
+   "oaspete": "Stirling Albion",
+   "ora_uk": "15:00",
+   "liga": "League Two",
+   "tara": "Scotland",
+   "cota": 1.6,
+   "sansa": 70.8,
+   "sansa_casa": 59.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030749,
+   "piata": "Peste 2.5",
+   "meci": "Vitesse - NAC Breda",
+   "gazda": "Vitesse",
+   "oaspete": "NAC Breda",
+   "ora_uk": "15:30",
+   "liga": "Eerste Divisie",
+   "tara": "Netherlands",
+   "cota": 1.44,
+   "sansa": 70.3,
+   "sansa_casa": 65.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030750,
+   "piata": "Peste 2.5",
+   "meci": "Almere City FC - FC Volendam",
+   "gazda": "Almere City FC",
+   "oaspete": "FC Volendam",
+   "ora_uk": "19:00",
+   "liga": "Eerste Divisie",
+   "tara": "Netherlands",
+   "cota": 1.36,
+   "sansa": 69.5,
+   "sansa_casa": 69.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030474,
+   "piata": "Peste 2.5",
+   "meci": "Belarus - San Marino",
+   "gazda": "Belarus",
+   "oaspete": "San Marino",
+   "ora_uk": "17:00",
+   "liga": "UEFA Nations League - League C",
+   "tara": "Europe",
+   "cota": 1.4,
+   "sansa": 69.1,
+   "sansa_casa": 66.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030960,
+   "piata": "Peste 2.5",
+   "meci": "Clachnacuddin - Bonnyrigg Rose",
+   "gazda": "Clachnacuddin",
+   "oaspete": "Bonnyrigg Rose",
+   "ora_uk": "15:00",
+   "liga": "Scottish Cup",
+   "tara": "Scotland",
+   "cota": 1.48,
+   "sansa": 68.6,
+   "sansa_casa": 63.7,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030434,
+   "piata": "Peste 2.5",
+   "meci": "Dorking Wanderers - Chatham Town",
+   "gazda": "Dorking Wanderers",
+   "oaspete": "Chatham Town",
+   "ora_uk": "15:00",
+   "liga": "FA Cup - Qualification",
+   "tara": "England",
+   "cota": 1.44,
+   "sansa": 67.3,
+   "sansa_casa": 64.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030396,
+   "piata": "Peste 2.5",
+   "meci": "Boreham Wood - Altrincham FC",
+   "gazda": "Boreham Wood",
+   "oaspete": "Altrincham FC",
+   "ora_uk": "15:00",
+   "liga": "National League",
+   "tara": "England",
+   "cota": 1.36,
+   "sansa": 67.2,
+   "sansa_casa": 69.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030404,
+   "piata": "Peste 2.5",
+   "meci": "Southend United - AFC Fylde",
+   "gazda": "Southend United",
+   "oaspete": "AFC Fylde",
+   "ora_uk": "15:00",
+   "liga": "National League",
+   "tara": "England",
+   "cota": 1.48,
+   "sansa": 66.7,
+   "sansa_casa": 63.7,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030953,
+   "piata": "Peste 2.5",
+   "meci": "Stranraer - Edinburgh City F.C.",
+   "gazda": "Stranraer",
+   "oaspete": "Edinburgh City F.C.",
+   "ora_uk": "15:00",
+   "liga": "League Two",
+   "tara": "Scotland",
+   "cota": 1.7,
+   "sansa": 65.5,
+   "sansa_casa": 55.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800030952,
+   "piata": "Peste 2.5",
+   "meci": "The Spartans FC - Kelty Hearts F.C.",
+   "gazda": "The Spartans FC",
+   "oaspete": "Kelty Hearts F.C.",
+   "ora_uk": "15:00",
+   "liga": "League Two",
+   "tara": "Scotland",
+   "cota": 1.57,
+   "sansa": 65.0,
+   "sansa_casa": 59.9,
+   "stare": "in asteptare"
+  }
+ ],
+ "istoric": [
+  {
+   "ziua": "2026-09-10",
+   "iesite": 7,
+   "verificate": 10,
+   "cota_totala": 390.01
+  },
+  {
+   "ziua": "2026-09-12",
+   "iesite": 16,
+   "verificate": 25,
+   "cota_totala": 55483.5
+  },
+  {
+   "ziua": "2026-09-13",
+   "iesite": 16,
+   "verificate": 28,
+   "cota_totala": 210284.47
+  },
+  {
+   "ziua": "2026-09-15",
+   "iesite": 1,
+   "verificate": 1,
+   "cota_totala": 1.48
+  },
+  {
+   "ziua": "2026-09-18",
+   "iesite": 0,
+   "verificate": 1,
+   "cota_totala": 1.48
+  },
+  {
+   "ziua": "2026-09-20",
+   "iesite": 20,
+   "verificate": 31,
+   "cota_totala": 359533.54
+  },
+  {
+   "ziua": "2026-09-21",
+   "iesite": 1,
+   "verificate": 1,
+   "cota_totala": 1.33
+  },
+  {
+   "ziua": "2026-09-23",
+   "iesite": 5,
+   "verificate": 10,
+   "cota_totala": 21.21
+  },
+  {
+   "ziua": "2026-09-25",
+   "iesite": 2,
+   "verificate": 5,
+   "cota_totala": 6.05
+  },
+  {
+   "ziua": "2026-09-26",
+   "iesite": 13,
+   "verificate": 19,
+   "cota_totala": 883.74
+  },
+  {
+   "ziua": "2026-09-29",
+   "iesite": 3,
+   "verificate": 4,
+   "cota_totala": 7.03
+  },
+  {
+   "ziua": "2026-09-30",
+   "iesite": 2,
+   "verificate": 3,
+   "cota_totala": 2.42
+  },
+  {
+   "ziua": "2026-10-01",
+   "iesite": 3,
+   "verificate": 5,
+   "cota_totala": 5.98
+  },
+  {
+   "ziua": "2026-10-02",
+   "iesite": 5,
+   "verificate": 7,
+   "cota_totala": 20.73
+  }
+ ]
+}
