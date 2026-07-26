@@ -1,0 +1,131 @@
+{
+ "ziua": "2026-09-18",
+ "facut": "2026-09-17T22:21:57+00:00",
+ "tinta": 20.0,
+ "cota_totala": 23.94,
+ "sansa": 7.51,
+ "picioare": [
+  {
+   "id_meci": 800022160,
+   "meci": "Alianza Atletico - Comerciantes Unidos",
+   "ora": "20:00",
+   "liga": "Liga 1 - Clausura",
+   "nume": "Peste 2.5 goluri",
+   "piata": "o25",
+   "sansa": 63.1,
+   "cota": 1.8,
+   "cod": {
+    "f": "gt",
+    "prag": 2.5
+   },
+   "zice_piata": 55.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800021864,
+   "meci": "Central Cordoba de Rosario - Defensa Y Justicia",
+   "ora": "21:00",
+   "liga": "Liga Profesional - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 77.9,
+   "cota": 1.48,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 67.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800021953,
+   "meci": "Águilas Doradas - Deportivo Pereira",
+   "ora": "21:00",
+   "liga": "Primera A - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 74.7,
+   "cota": 1.28,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 78.1,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800022158,
+   "meci": "Nacional Asunción - CS 2 de Mayo",
+   "ora": "21:30",
+   "liga": "Copa de Primera - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 79.0,
+   "cota": 1.39,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 71.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800024013,
+   "meci": "Vila Nova FC - América Mineiro",
+   "ora": "22:30",
+   "liga": "Serie B",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 78.0,
+   "cota": 1.29,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 77.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800024012,
+   "meci": "Independiente Petrolero - SA Bulo Bulo",
+   "ora": "23:00",
+   "liga": "Division Profesional",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 77.7,
+   "cota": 1.31,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 76.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800024014,
+   "meci": "Ceará - Grêmio Novorizontino",
+   "ora": "23:30",
+   "liga": "Serie B",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 79.0,
+   "cota": 1.41,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 70.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800024018,
+   "meci": "New York City FC - New York Red Bulls",
+   "ora": "23:30",
+   "liga": "MLS",
+   "nume": "New nu pierde",
+   "piata": "X2",
+   "sansa": 54.1,
+   "cota": 2.12,
+   "cod": {
+    "f": "np",
+    "cine": "oaspete"
+   },
+   "zice_piata": 47.2,
+   "stare": "in asteptare"
+  }
+ ]
+}

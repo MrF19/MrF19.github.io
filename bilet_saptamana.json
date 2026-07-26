@@ -1,0 +1,61 @@
+{
+ "eticheta": "Saptamana",
+ "tinta": null,
+ "cota": 2,
+ "valoare": 2,
+ "sansa": 48.8262,
+ "unuDin": 2,
+ "meciuri": [
+  {
+   "id_meci": 800025275,
+   "meci": "Deportivo Garcilaso - Universitario de Deportes",
+   "gazda": "Deportivo Garcilaso",
+   "oaspete": "Universitario de Deportes",
+   "ora": "23:00",
+   "incredere": 0.94,
+   "liga": "Liga 1 - Clausura",
+   "tara": "Peru",
+   "sansa": 68.8,
+   "cota": 1.45,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 68.8,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-19"
+  },
+  {
+   "id_meci": 800025264,
+   "meci": "Deportivo Cali - Cúcuta Deportivo",
+   "gazda": "Deportivo Cali",
+   "oaspete": "Cúcuta Deportivo",
+   "ora": "23:10",
+   "incredere": 0.75,
+   "liga": "Primera A - Clausura",
+   "tara": "Colombia",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-19"
+  }
+ ],
+ "saptamana": "2026-09-14",
+ "stare": "in asteptare",
+ "actualizat": "2026-09-17T22:22:00+00:00"
+}

@@ -1,0 +1,71 @@
+{
+ "id": "2026-09-18-atentie-454060be",
+ "facut": "2026-09-18T22:41:15+00:00",
+ "nivel": "atentie",
+ "mesaje": [
+  "ML-ul strica GG (brier 0.256 fata de 0.251 fara el) - l-am oprit acolo",
+  "ML-ul strica peste 2,5 (brier 0.246 fata de 0.242 fara el) - l-am oprit acolo",
+  "Pe 2026-09-17 au iesit doar 41% din pronosticurile 1X2 (176 meciuri)"
+ ],
+ "cifre": {
+  "notare_de_la": "2026-09-11",
+  "note": {
+   "1x2_aplicatie": {
+    "n": 4488,
+    "nimerit": 46.7,
+    "brier": 0.6634
+   },
+   "1x2_goluri": {
+    "n": 4488,
+    "nimerit": 46.3,
+    "brier": 0.6293
+   },
+   "1x2_bet365": {
+    "n": 1163,
+    "nimerit": 52.0,
+    "brier": 0.5943
+   },
+   "gg_aplicatie": {
+    "n": 4488,
+    "nimerit": 54.1,
+    "brier": 0.2564
+   },
+   "gg_fara_ml": {
+    "n": 4488,
+    "nimerit": 54.5,
+    "brier": 0.2508
+   },
+   "gg_bet365": {
+    "n": 1143,
+    "nimerit": 57.5,
+    "brier": 0.2443
+   },
+   "o25_aplicatie": {
+    "n": 4488,
+    "nimerit": 59.0,
+    "brier": 0.2462
+   },
+   "o25_fara_ml": {
+    "n": 4488,
+    "nimerit": 59.3,
+    "brier": 0.2421
+   },
+   "o25_bet365": {
+    "n": 1088,
+    "nimerit": 58.2,
+    "brier": 0.2378
+   }
+  },
+  "maine": {
+   "n": 3116,
+   "doi_la_suta": 26.3,
+   "cu_cote": 1465,
+   "acord_la_suta": 81.8
+  },
+  "ieri": {
+   "zi": "2026-09-17",
+   "n": 176,
+   "nimerit": 40.9
+  }
+ }
+}
