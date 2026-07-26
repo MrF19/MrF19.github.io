@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Copii de siguranta facute inainte de modificari - nu au ce cauta pe site.
+# Ajunsesera publicate pe 24 august 2026 (patru fisiere, ~940 KB).
+*.inainte_de*
