@@ -1,0 +1,212 @@
+{
+ "ziua": "2026-09-07",
+ "facut": "2026-09-06T22:38:27+00:00",
+ "tinta": 20.0,
+ "cota_totala": 20.31,
+ "sansa": 29.52,
+ "picioare": [
+  {
+   "id_meci": 800016178,
+   "meci": "Nacional Potosi - Blooming",
+   "ora": "00:00",
+   "liga": "Division Profesional",
+   "nume": "Nacional nu pierde",
+   "piata": "1X",
+   "sansa": 94.2,
+   "cota": 1.19,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 84.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016188,
+   "meci": "Fk Fratria - Chernomorets Burgas",
+   "ora": "15:00",
+   "liga": "Vtora liga",
+   "nume": "Fk nu pierde",
+   "piata": "1X",
+   "sansa": 93.8,
+   "cota": 1.25,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 80.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016214,
+   "meci": "Asteras Tripolis - Iraklis",
+   "ora": "15:00",
+   "liga": "Super League",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 86.9,
+   "cota": 1.36,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016276,
+   "meci": "Al Khaleej - Al Riyadh SC",
+   "ora": "15:30",
+   "liga": "Saudi Professional League",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 86.4,
+   "cota": 1.37,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016189,
+   "meci": "Pirin 22 Blagoevgrad - Ludogorets II",
+   "ora": "16:00",
+   "liga": "Vtora liga",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 86.2,
+   "cota": 1.36,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016196,
+   "meci": "Pafos - Ol. Nicosia",
+   "ora": "16:00",
+   "liga": "Cyprus League",
+   "nume": "Pafos nu pierde",
+   "piata": "1X",
+   "sansa": 95.1,
+   "cota": 1.15,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 87.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016201,
+   "meci": "National Bank Egypt - Ghazl El Mahallah",
+   "ora": "17:00",
+   "liga": "Premier League",
+   "nume": "National nu pierde",
+   "piata": "1X",
+   "sansa": 93.7,
+   "cota": 1.23,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 81.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016224,
+   "meci": "Hapoel Tel Aviv - Hapoel Ramat Gan",
+   "ora": "17:00",
+   "liga": "Ligat ha'Al",
+   "nume": "Hapoel nu pierde",
+   "piata": "1X",
+   "sansa": 96.4,
+   "cota": 1.16,
+   "cod": {
+    "f": "np",
+    "cine": "gazda"
+   },
+   "zice_piata": 86.2,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016225,
+   "meci": "Bnei Sakhnin - Beitar Jerusalem",
+   "ora": "17:15",
+   "liga": "Ligat ha'Al",
+   "nume": "Beitar nu pierde",
+   "piata": "X2",
+   "sansa": 94.0,
+   "cota": 1.18,
+   "cod": {
+    "f": "np",
+    "cine": "oaspete"
+   },
+   "zice_piata": 84.7,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016266,
+   "meci": "Estoril Praia - FC Arouca",
+   "ora": "19:15",
+   "liga": "Liga Portugal",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 85.8,
+   "cota": 1.37,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016306,
+   "meci": "Portland Timbers 2 - Vancouver Whitecaps 2",
+   "ora": "20:00",
+   "liga": "MLS Next Pro",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 92.0,
+   "cota": 1.27,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 78.7,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016250,
+   "meci": "Atlante W - Juárez (W)",
+   "ora": "21:45",
+   "liga": "Liga MX Women - Apertura",
+   "nume": "Juárez nu pierde",
+   "piata": "X2",
+   "sansa": 90.9,
+   "cota": 1.24,
+   "cod": {
+    "f": "np",
+    "cine": "oaspete"
+   },
+   "zice_piata": 80.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800013122,
+   "meci": "Excursionistas - Ituzaingó",
+   "ora": "23:00",
+   "liga": "Primera B",
+   "nume": "Excursionistas castiga",
+   "piata": "1x2",
+   "sansa": 89.1,
+   "cota": 1.29,
+   "cod": {
+    "f": "1x2",
+    "cine": "gazda"
+   },
+   "zice_piata": 77.5,
+   "stare": "in asteptare"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "eticheta": "Saptamana",
+ "tinta": null,
+ "cota": 6,
+ "valoare": 6,
+ "sansa": 17.7896,
+ "unuDin": 6,
+ "meciuri": [
+  {
+   "id_meci": 800015142,
+   "meci": "Deportivo Cuenca - Libertad",
+   "gazda": "Deportivo Cuenca",
+   "oaspete": "Libertad",
+   "ora": "00:00",
+   "incredere": 1.0,
+   "liga": "Liga Pro",
+   "tara": "Ecuador",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-07"
+  },
+  {
+   "id_meci": 800015143,
+   "meci": "Emelec - Manta FC",
+   "gazda": "Emelec",
+   "oaspete": "Manta FC",
+   "ora": "00:00",
+   "incredere": 1.0,
+   "liga": "Liga Pro",
+   "tara": "Ecuador",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-08"
+  },
+  {
+   "id_meci": 800015146,
+   "meci": "Orense SC - Guayaquil City",
+   "gazda": "Orense SC",
+   "oaspete": "Guayaquil City",
+   "ora": "00:00",
+   "incredere": 1.0,
+   "liga": "Liga Pro",
+   "tara": "Ecuador",
+   "sansa": 71.0,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 71.0,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-08"
+  },
+  {
+   "id_meci": 800016541,
+   "meci": "VPS - AC Oulu",
+   "gazda": "VPS",
+   "oaspete": "AC Oulu",
+   "ora": "15:00",
+   "incredere": 1.0,
+   "liga": "Veikkausliiga - Championship Group",
+   "tara": "Finland",
+   "sansa": 70.9,
+   "cota": 1.41,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 70.9,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-08"
+  },
+  {
+   "id_meci": 800016424,
+   "meci": "Vitória - Grêmio",
+   "gazda": "Vitória",
+   "oaspete": "Grêmio",
+   "ora": "23:00",
+   "incredere": 1.0,
+   "liga": "Serie A Betano",
+   "tara": "Brazil",
+   "sansa": 70.2,
+   "cota": 1.43,
+   "picioare": [
+    {
+     "nume": "Peste 1.5 goluri",
+     "cod": {
+      "f": "gt",
+      "prag": 1.5
+     },
+     "p": 70.2,
+     "stare": "in asteptare"
+    }
+   ],
+   "zi": "2026-09-07"
+  }
+ ],
+ "saptamana": "2026-09-07",
+ "stare": "in asteptare",
+ "actualizat": "2026-09-06T22:38:30+00:00"
+}

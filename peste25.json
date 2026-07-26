@@ -1,0 +1,156 @@
+{
+ "ziua": "2026-09-07",
+ "facut": "2026-09-06T22:38:26+00:00",
+ "linia": 2.5,
+ "cota_min": 1.7,
+ "cota_max": 2.15,
+ "sansa_min": 65.0,
+ "cate_gasite": 8,
+ "cota_totala": 128.69,
+ "meciuri": [
+  {
+   "id_meci": 800016216,
+   "piata": "Peste 2.5",
+   "meci": "Videoton FC Fehérvár - DVTK",
+   "gazda": "Videoton FC Fehérvár",
+   "oaspete": "DVTK",
+   "ora_uk": "18:30",
+   "liga": "NB II.",
+   "tara": "Hungary",
+   "cota": 1.91,
+   "sansa": 78.0,
+   "sansa_casa": 48.5,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016224,
+   "piata": "Peste 2.5",
+   "meci": "Hapoel Tel Aviv - Hapoel Ramat Gan",
+   "gazda": "Hapoel Tel Aviv",
+   "oaspete": "Hapoel Ramat Gan",
+   "ora_uk": "18:00",
+   "liga": "Ligat ha'Al",
+   "tara": "Israel",
+   "cota": 1.73,
+   "sansa": 75.0,
+   "sansa_casa": 55.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800013122,
+   "piata": "Peste 2.5",
+   "meci": "Excursionistas - Ituzaingó",
+   "gazda": "Excursionistas",
+   "oaspete": "Ituzaingó",
+   "ora_uk": "00:00",
+   "liga": "Primera B",
+   "tara": "Argentina",
+   "cota": 1.93,
+   "sansa": 74.7,
+   "sansa_casa": 49.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016264,
+   "piata": "Peste 2.5",
+   "meci": "Pogoń Szczecin - Wisla Plock",
+   "gazda": "Pogoń Szczecin",
+   "oaspete": "Wisla Plock",
+   "ora_uk": "19:30",
+   "liga": "Ekstraklasa",
+   "tara": "Poland",
+   "cota": 1.8,
+   "sansa": 73.5,
+   "sansa_casa": 52.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016276,
+   "piata": "Peste 2.5",
+   "meci": "Al Khaleej - Al Riyadh SC",
+   "gazda": "Al Khaleej",
+   "oaspete": "Al Riyadh SC",
+   "ora_uk": "16:30",
+   "liga": "Saudi Professional League",
+   "tara": "Saudi Arabia",
+   "cota": 1.8,
+   "sansa": 69.5,
+   "sansa_casa": 52.6,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016203,
+   "piata": "Peste 2.5",
+   "meci": "Bromley - AFC Wimbledon",
+   "gazda": "Bromley",
+   "oaspete": "AFC Wimbledon",
+   "ora_uk": "20:00",
+   "liga": "League One",
+   "tara": "England",
+   "cota": 2.0,
+   "sansa": 68.2,
+   "sansa_casa": 47.4,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016225,
+   "piata": "Peste 2.5",
+   "meci": "Bnei Sakhnin - Beitar Jerusalem",
+   "gazda": "Bnei Sakhnin",
+   "oaspete": "Beitar Jerusalem",
+   "ora_uk": "18:15",
+   "liga": "Ligat ha'Al",
+   "tara": "Israel",
+   "cota": 1.73,
+   "sansa": 66.7,
+   "sansa_casa": 56.3,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800016299,
+   "piata": "Peste 2.5",
+   "meci": "İstanbulspor - Igdir Fk",
+   "gazda": "İstanbulspor",
+   "oaspete": "Igdir Fk",
+   "ora_uk": "15:00",
+   "liga": "1. Lig",
+   "tara": "Turkey",
+   "cota": 1.8,
+   "sansa": 66.4,
+   "sansa_casa": 52.6,
+   "stare": "in asteptare"
+  }
+ ],
+ "istoric": [
+  {
+   "ziua": "2026-09-02",
+   "iesite": 9,
+   "verificate": 20,
+   "cota_totala": 3190971.71
+  },
+  {
+   "ziua": "2026-09-03",
+   "iesite": 3,
+   "verificate": 8,
+   "cota_totala": 172.0
+  },
+  {
+   "ziua": "2026-09-04",
+   "iesite": 6,
+   "verificate": 11,
+   "cota_totala": 834.01
+  },
+  {
+   "ziua": "2026-09-05",
+   "iesite": 33,
+   "verificate": 60,
+   "cota_totala": 7051202827298818.0
+  },
+  {
+   "ziua": "2026-09-06",
+   "iesite": 27,
+   "verificate": 48,
+   "cota_totala": 352425824930759.4
+  }
+ ]
+}
