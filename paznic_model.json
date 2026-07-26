@@ -1,0 +1,70 @@
+{
+ "id": "2026-09-15-ok-38cbf318",
+ "facut": "2026-09-15T22:26:25+00:00",
+ "nivel": "ok",
+ "mesaje": [
+  "ML-ul strica GG (brier 0.256 fata de 0.249 fara el) - l-am oprit acolo",
+  "ML-ul strica peste 2,5 (brier 0.248 fata de 0.243 fara el) - l-am oprit acolo"
+ ],
+ "cifre": {
+  "notare_de_la": "2026-09-11",
+  "note": {
+   "1x2_aplicatie": {
+    "n": 3626,
+    "nimerit": 47.0,
+    "brier": 0.6721
+   },
+   "1x2_goluri": {
+    "n": 3626,
+    "nimerit": 46.8,
+    "brier": 0.6289
+   },
+   "1x2_bet365": {
+    "n": 1113,
+    "nimerit": 51.8,
+    "brier": 0.5966
+   },
+   "gg_aplicatie": {
+    "n": 3626,
+    "nimerit": 54.6,
+    "brier": 0.2562
+   },
+   "gg_fara_ml": {
+    "n": 3626,
+    "nimerit": 55.3,
+    "brier": 0.2491
+   },
+   "gg_bet365": {
+    "n": 1094,
+    "nimerit": 58.0,
+    "brier": 0.2441
+   },
+   "o25_aplicatie": {
+    "n": 3626,
+    "nimerit": 58.9,
+    "brier": 0.2479
+   },
+   "o25_fara_ml": {
+    "n": 3626,
+    "nimerit": 59.4,
+    "brier": 0.2429
+   },
+   "o25_bet365": {
+    "n": 1043,
+    "nimerit": 58.2,
+    "brier": 0.2383
+   }
+  },
+  "maine": {
+   "n": 644,
+   "doi_la_suta": 26.7,
+   "cu_cote": 28,
+   "acord_la_suta": 75.0
+  },
+  "ieri": {
+   "zi": "2026-09-14",
+   "n": 163,
+   "nimerit": 50.3
+  }
+ }
+}

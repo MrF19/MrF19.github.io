@@ -1,0 +1,145 @@
+{
+ "ziua": "2026-09-13",
+ "facut": "2026-09-12T23:51:13+00:00",
+ "tinta": 20.0,
+ "cota_totala": 19.97,
+ "sansa": 20.28,
+ "picioare": [
+  {
+   "id_meci": 800020065,
+   "meci": "Monterrey - Tigres UANL",
+   "ora": "01:00",
+   "liga": "Liga MX - Apertura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 84.4,
+   "cota": 1.37,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800020149,
+   "meci": "Alianza Lima - Universitario de Deportes",
+   "ora": "01:00",
+   "liga": "Liga 1 - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 83.3,
+   "cota": 1.42,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 70.4,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800020066,
+   "meci": "Cruz Azul - Club América",
+   "ora": "03:00",
+   "liga": "Liga MX - Apertura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 84.4,
+   "cota": 1.37,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 73.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800019784,
+   "meci": "1. FC Heidenheim - Holstein Kiel",
+   "ora": "11:30",
+   "liga": "2. Bundesliga",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 85.2,
+   "cota": 1.35,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 74.1,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800020121,
+   "meci": "Sogndal IL - Strommen",
+   "ora": "15:00",
+   "liga": "OBOS-ligaen",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 85.8,
+   "cota": 1.32,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 75.8,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800019423,
+   "meci": "Sarmiento - Club Atlético Belgrano",
+   "ora": "17:45",
+   "liga": "Liga Profesional - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 82.8,
+   "cota": 1.47,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 68.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800020247,
+   "meci": "Al Riyadh SC - Al-Kholood",
+   "ora": "18:00",
+   "liga": "Saudi Professional League",
+   "nume": "Al-Kholood nu pierde",
+   "piata": "X2",
+   "sansa": 80.9,
+   "cota": 1.47,
+   "cod": {
+    "f": "np",
+    "cine": "oaspete"
+   },
+   "zice_piata": 68.0,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800019425,
+   "meci": "Argentinos Juniors - Gimnasia y Esgrima",
+   "ora": "20:00",
+   "liga": "Liga Profesional - Clausura",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 82.9,
+   "cota": 1.39,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 71.9,
+   "stare": "in asteptare"
+  },
+  {
+   "id_meci": 800019718,
+   "meci": "Macará - Emelec",
+   "ora": "20:00",
+   "liga": "Liga Pro",
+   "nume": "Fara egal",
+   "piata": "12",
+   "sansa": 84.2,
+   "cota": 1.4,
+   "cod": {
+    "f": "12"
+   },
+   "zice_piata": 71.4,
+   "stare": "in asteptare"
+  }
+ ]
+}
