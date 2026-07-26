@@ -1,0 +1,13 @@
+{
+  "_ce_e": "Configuratia Firebase pentru chatul MRF. Cheia apiKey NU e o parola - e publica in orice aplicatie web Firebase si se vede oricum in pagina. Ce protejeaza cu adevarat sunt regulile din consola (Firestore -> Rules).",
+  "_proiect": "MrF1923 (Spark plan, gratuit)",
+  "_baza": "Cloud Firestore, locatie eur3 (europe-west)",
+  "_adaugat": "2026-08-03",
+
+  "apiKey": "AIzaSyCYLdmi-Z3Kj_jSEp1JMzpE55a-Lu4fmDA",
+  "authDomain": "mrf1923-8d510.firebaseapp.com",
+  "projectId": "mrf1923-8d510",
+  "storageBucket": "mrf1923-8d510.firebasestorage.app",
+  "messagingSenderId": "257585519015",
+  "appId": "1:257585519015:web:4836c1644cc645554efe82"
+}
